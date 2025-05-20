@@ -1,0 +1,242 @@
+.html,
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.imagem-reg {
+    width: 65vw;
+    height: 100%;
+    background-image: url('../../imgs/register/register.png');
+    background-size: cover;
+    margin: 0;
+}
+
+.register {
+    width: 35vw;
+    height: 100%;
+    background-color: #111111;
+}
+
+.container-reg {
+    width: 25vw;
+    height: 75%;
+    background-color: rgb(30, 29, 29);
+    border-radius: 8px;
+    border: 2px solid rgba(100, 98, 98, 0.632);
+    padding-bottom: 2vh;
+}
+
+.titulo-reg {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+.container-input-reg2 {
+    width: 25vw;
+    height: 10vh;
+}
+
+.container-input-reg {
+    width: 25vw;
+    height: 16vh;
+    gap: 2vh;
+    margin-top: 2vh;
+
+}
+
+.input-reg {
+    width: 20vw;
+    height: 5vh;
+    padding-left: 1vw;
+    border-radius: 8px;
+    border: 1px solid rgba(100, 98, 98, 0.632);
+    background-color: rgb(30, 29, 29);
+    color: rgba(169, 168, 168, 0.632);
+}
+
+.input-text-reg {
+    font-size: 2vh;
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 0.5vh;
+    color: rgba(169, 168, 168, 0.632)
+}
+
+.e {
+    text-decoration: underline;
+}
+
+.e:hover {
+    color: white;
+    scale: 1.02;
+    transition: 0.4s;
+}
+
+.input:focus {
+    border: 0px solid rgba(169, 168, 168, 0.632);
+}
+
+.botaoEntrar {
+    width: 21vw;
+    height: 6vh;
+    border-radius: 8px;
+    background-color: #0000FF;
+    border: 0;
+    color: white;
+}
+
+.botaoEntrar:hover {
+    scale: 1.03;
+    transition: 0.4s;
+    background-color: #ffffff;
+    color: black;
+}
+
+.botaoSport {
+    width: 21vw;
+    height: 6vh;
+    border-radius: 8px;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+
+.botaoSport:hover {
+    scale: 1.03;
+    transition: 0.4s;
+    background-color: #d000ff;
+}
+
+.iconeBotao {
+    height: 70%;
+    color: #111111;
+}
+
+@media (max-width: 660px) {
+    .html {
+        margin: 0;
+    }
+
+    .body {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .imagem-reg {
+        width: 0;
+        height: 0;
+        background-color: #0000FF;
+    }
+
+   .titulo-reg{
+        padding-top: 1.5vw;
+        padding: 0.5vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .titulo-register {
+        font-size: 3.5vh;
+        text-align: center;
+        width: 50vw;
+    }
+
+    .register {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .container-reg {
+        width: 50vw;
+        height: auto;
+    }
+
+    .container-input {
+        width: 50vw;
+    }
+
+    .container-input-reg {
+        width: 50vw;
+    }
+
+    .input,
+    .botaoEntrar,
+    .botaoSport {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .imagem-reg {
+        width: 0;
+        height: 0;
+    }
+
+    .register {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container-reg {
+        width: 80vw;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .container-input {
+        width: 80vw;
+    }
+
+   .titulo-reg{
+        padding-top: 1.5vw;
+        padding: 0.5vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    .container-input-reg {
+        width: 80vw;
+    }
+
+    .input {
+        width: 70vw;
+        height: 4vh;
+        border-radius: 8px;
+    }
+
+    .input-text {
+        font-size: 2vh;
+    }
+
+    .titulo-register {
+        font-size: 4vh;
+        text-align: center;
+    }
+
+    .botaoEntrar,
+    .botaoSport {
+        width: 70vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 410px) {
+     .container-reg {
+        border-radius: 12px;
+    }
+    .input{
+        border-radius: 8px;
+    }
+    .titulo-reg{
+        padding-top: 1.5vw;
+        padding: 0.5vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,157 @@
+
+
+.imagem {
+    width: 65vw;
+    height: 100%;
+    background-image: url('../../imgs/login/background.png');
+    background-size: cover;
+}
+
+.login {
+    width: 35vw;
+    height: 100%;
+    background-color: #111111;
+}
+
+.container-log {
+    width: 25vw;
+    height: 35vw;
+    background-color: rgb(30, 29, 29);
+    border-radius: 1vw;
+    border: 2px solid rgba(100, 98, 98, 0.632);
+}
+.container-titulo{
+    display: flex;
+    flex-direction: column;
+    height: 10vw;
+    width: 23vw;
+    margin-left: 2vw;
+    justify-content: center;
+}
+
+
+.container-input{
+    width: 25vw;
+    height: 7.5vw;
+}
+.container-input2{
+    width: 25vw;
+    height: 15vw;
+    gap: 2vh;
+}
+
+.input{
+    width: 20vw;
+    height: 3vw;
+    padding-left: 1vw;
+    border-radius: 1vw;
+    border: 1px solid rgba(100, 98, 98, 0.632);
+    background-color: rgb(30, 29, 29);
+    color: rgba(169, 168, 168, 0.632);
+}
+.input-text{
+    margin: 0;
+    font-weight: 300;
+    margin-bottom: 0.5vw;
+    color: rgba(169, 168, 168, 0.632)
+}
+.e{
+    text-decoration: underline;
+}
+.e:hover{
+    color: white;
+    scale: 1.02;
+    transition: 0.4s;
+}
+.input:focus {
+    border: 0px solid rgba(169, 168, 168, 0.632);
+  }
+
+.botaoEntrar{
+    width: 21vw;
+    height: 6vh;
+    border-radius: 1vw;
+    background-color: #0000FF;
+    border: 0;
+    color: white;
+}
+.botaoEntrar:hover{
+    scale: 1.03;
+    transition: 0.4s;
+    background-color: #ffffff;
+    color: black;
+}
+
+.botaoSport{
+    width: 21vw;
+    height: 6vh;
+    border-radius: 1vw;
+    background-color: black;
+    border: 0;
+    color: white;
+}
+.botaoSport:hover{
+    scale: 1.03;
+    transition: 0.4s;
+    background-color: #d000ff;
+}
+.iconeBotao{
+    height: 70%;
+    color: #111111;
+}
+
+
+
+@media (max-width: 660px) {
+    .html {
+        margin: 0;
+    }
+
+    .body {
+        width: 100vw;
+        height: 100%;
+    }
+
+    .imagem {
+        width: 0;
+        height: 0;
+        background-color: #0000FF;
+    }
+
+   .titulo{
+        padding-top: 1.5vw;
+        padding: 0.5vw;
+        padding-left: 0;
+        justify-content: center;
+    }
+    .titulo-login {
+        font-size: 3.5vw;
+        text-align: center;
+        width: 50vw;
+    }
+
+    .login {
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .container-log {
+        width: 50vw;
+        height: 40vw;
+    }
+
+    .container-input {
+        width: 50vw;
+    }
+
+    .container-input2 {
+        width: 50vw;
+    }
+
+    .input,
+    .botaoEntrar,
+    .botaoSport {
+        width: 40vw;
+    }
+}
