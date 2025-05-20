@@ -448,36 +448,40 @@ html {
     width: 6vw;
     justify-content: center;
 }
-.post-comments{
+
+.post-comments {
     height: 33vw;
     width: 100%;
-    background-color: darkorange;
 }
-.comment{
+
+.comment {
     width: 28vw;
     height: auto;
     background-color: #111111;
     margin-top: 0.5vw;
     border-radius: 0.5vw;
 }
-.comment-icon{
+
+.comment-icon {
     display: flex;
     flex-direction: column;
     width: 8vw;
     height: auto;
-    background-color: rgb(255, 0, 0);
     margin-left: 1vw;
 }
-.comment-icon .image{
+
+.comment-icon .image {
     width: 4vw;
     height: 4vw;
 }
+
 .post-foto {
     width: 4vw;
     height: 4vw;
     border-radius: 1vw;
 }
-.post-author{
+
+.post-author {
     display: flex;
     flex-direction: column;
     width: 20vw;
@@ -505,6 +509,9 @@ html {
 }
 
 .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     background-color: rgba(245, 255, 240, 0);
     border: none;
     cursor: 'pointer';
@@ -536,6 +543,300 @@ html {
     transition: 0.5s;
     cursor: pointer;
 }
+/*MODAL POST*/
+.post {
+    display: flex;
+    flex-direction: row;
+    height: 45vw;
+    width: 70vw;
+    border-radius: 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.097);
+    background-color: rgb(34, 34, 34);
+}
+
+.post-section-image {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: center;
+     background-color: #111111;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+}
+
+.post-column {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+.post-image {
+    object-fit: contain;
+    width: 40vw;
+    border-radius: 0;
+}
+
+.post-topo {
+    display: flex;
+    flex-direction: row;
+    height: 6vw;
+    width: 30vw;
+     background-color: #111111;
+    border-top-right-radius: 1vw;
+}
+
+.post-topo-column-foto {
+    display: flex;
+    flex-direction: column;
+    width: 6vw;
+    height: 6vw;
+    justify-content: center;
+}
+
+.post-topo-column-foto .row {
+    display: flex;
+    flex-direction: row;
+    width: 6vw;
+    justify-content: center;
+}
+
+.post-title {
+    color: white;
+    font-family: 'Inter';
+    text-align: justify;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+.post-loc {
+    font-family: 'Inter';
+    text-align: justify;
+    font-weight: 300;
+    margin-top: 0;
+    color: rgb(148, 148, 148);
+    font-size: 1vw;
+}
+
+/*Comentários*/
+.post-comments {
+    display: flex;
+    flex-direction: column;
+    height: 33vw;
+    width: 30vw;
+    overflow-y: scroll;
+    padding-bottom: 1vw;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    width: 27vw;
+    height: auto;
+    background-color: #0000001f;
+    margin-top: 0.5vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.373);
+}
+
+.comment-icone {
+    display: flex;
+    flex-direction: column;
+    width: 4vw;
+    height: 4vw;
+    margin: 0.5vw;
+
+}
+
+.comment-image {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 100px;
+    object-fit: co;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    width: 19vw;
+    height: auto;
+    margin: 0.5vw;
+    margin-left: 0;
+}
+
+.comment-like {
+    display: flex;
+    flex-direction: column;
+    width: 3vw;
+    height: auto;
+    margin: 0.5vw;
+    margin-left: 0;
+    justify-content: center;
+}
+
+.comment-like .likeButtonComment {
+    width: 1vw;
+    height: 1vw;
+}
+
+.comment-content .title {
+    font-family: 'Inter';
+    font-size: 1vw;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-left: 0.2vw;
+}
+
+.comment-content .text {
+    font-family: 'Inter';
+    font-size: 0.8vw;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    width: 19vw;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    margin-left: 0.2vw;
+}
+
+.comment-content-likes {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 20vw;
+}
+
+.comment-count-column {
+    display: flex;
+    flex-direction: column;
+    height: 2vw;
+    justify-content: center;
+    margin: 0.2vw;
+}
+
+.comment-count {
+    margin: 0;
+    font-family: 'Inter';
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: white;
+}
+
+.comment-post-foto {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 1vw;
+}
+
+.post-author {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 6vw;
+    justify-content: center;
+}
+
+.button-post {
+    background-color: #11111100;
+    color: white;
+    border: none;
+    font-size: 1.5vw;
+}
+
+.button-post:hover {
+    scale: 1.03;
+    transition: 0.5s;
+    cursor: pointer;
+}
+/* post like */
+.post-section-like {
+    display: flex;
+    flex-direction: row;
+    width: 30vw;
+    height: 6vw;
+    background-color: #111111;
+    border-bottom-right-radius: 1vw;
+}
+
+.post-like-option {
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    height: 6vw;
+    justify-content: center;
+}
+
+.post-like-option .like {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2.5vw;
+    width: 5vw;
+}
+
+.post-like-option .like .like-icon {
+    height: 2.5vw;
+    width: 2.5vw;
+}
+
+.post-newComment {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 6vw;
+    justify-content: center;
+}
+
+.post-newComment .div-input {
+    display: flex;
+    flex-direction: row;
+    height: 3vw;
+    width: 20vw;
+    justify-content: center;
+    margin-left: 0;
+}
+
+.post-newComment .div-input .input {
+    width: 18vw;
+    height: 3vw;
+    border-radius: 0.8vw;
+    border: 0px solid rgba(255, 250, 250, 0.632);
+    background-color: rgb(33, 32, 32);
+    color: rgba(169, 168, 168, 0.632);
+    font-size: 1vw;
+}
+
+.post-send {
+    display: flex;
+    flex-direction: column;
+    width: 5vw;
+    height: 6vw;
+    justify-content: center;
+}
+
+.post-send .div-send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 2.5vw;
+    width: 5vw;
+}
+.post-send .div-send .send{
+    height: 2.5vw;
+    width: 2.5vw;
+    color: white;
+}
+.post-send .div-send .send:hover{
+    scale: 1.04;
+    transition: 0.5s;
+    cursor: pointer;
+    color: #0000FF;
+}
 
 @media (orientation: portrait) {
     .section-total {
@@ -549,19 +850,20 @@ html {
         width: 80vw;
         height: auto;
         overflow: auto;
-        /* permite rolar */
         -webkit-overflow-scrolling: touch;
-        /* rolagem suave em iOS */
         scrollbar-width: none;
         overflow-y: hidden;
+        order: 2;
     }
 
     .section-feed {
         width: 90vw;
+        order: 1;
     }
 
     .section-tops {
         width: 90vw;
+        order: 3;
     }
 
     .card-trending {
@@ -694,170 +996,6 @@ html {
     .trending-topics {
         font-size: 3vw;
     }
-
-    .trending-text {
-        font-size: 2vw;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-total {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-perfil {
-        flex-direction: row;
-        gap: 1rem;
-        width: 80vw;
-        height: auto;
-        overflow: auto;
-        /* permite rolar */
-        -webkit-overflow-scrolling: touch;
-        /* rolagem suave em iOS */
-        scrollbar-width: none;
-        overflow-y: hidden;
-    }
-
-    .section-feed {
-        width: 90vw;
-    }
-
-    .section-tops {
-        width: 90vw;
-    }
-
-    .perfil {
-        width: 50vw;
-        height: 32vw;
-        border-radius: 3vw;
-    }
-
-    .perfil-metade {
-        width: 50vw;
-        height: 14vw;
-    }
-
-    .perfil-metade-banner {
-        width: 50vw;
-        height: 18vw;
-        border-top-left-radius: 3vw;
-        border-top-right-radius: 3vw;
-    }
-
-    .banner {
-        width: 50vw;
-        height: 16vw;
-        border-top-left-radius: 3vw;
-        border-top-right-radius: 3vw;
-    }
-
-    .perfil-section-foto {
-        margin-top: 12vw;
-        justify-content: center;
-    }
-
-    .foto-perfil {
-        margin: 1vw;
-        height: 8vw;
-        width: 8vw;
-        border-radius: 1vw;
-        z-index: 10;
-        margin-left: 4vw;
-    }
-
-    .perfil-coluna {
-        width: 40vw;
-        margin-left: 12vw;
-    }
-
-    .perfil-line1 {
-        width: 50vw;
-        margin-top: 0;
-    }
-
-    .perfil-title {
-        margin-left: 2vw;
-        font-size: 3vw;
-    }
-
-    .perfil-text {
-        margin-left: 2vw;
-        font-size: 2vw;
-    }
-
-    .perfil-loc {
-        font-size: 1.4vw;
-    }
-
-    .card-feed {
-        width: 80vw;
-        border-radius: 3vw;
-        margin: 0;
-    }
-
-    .card-title {
-        font-size: 3vw;
-    }
-
-    .card-loc {
-        font-size: 2vw;
-    }
-
-    .card-text {
-        font-size: 2.5vw;
-    }
-
-    .card-date {
-        font-size: 2vw;
-    }
-
-    .ask {
-        width: 80vw;
-        border-radius: 3vw;
-        height: 12vw;
-    }
-
-    .foto {
-        border-radius: 2vw;
-        height: 9vw;
-        width: 9vw;
-    }
-
-    .div-image-ask {
-        border-radius: 1vw;
-        height: 12vw;
-    }
-
-    .container-input-feed {
-        width: 60vw;
-        height: 12vw;
-
-    }
-
-    .input-feed {
-        width: 50vw;
-        height: 6vw;
-        border-radius: 2vw;
-        font-size: 2.5vw;
-    }
-
-    .card-trending {
-        width: 77vw;
-        height: 45vw;
-        padding: 2vw;
-        margin-bottom: 2rem;
-        border-radius: 3vw;
-    }
-
-    .trending-title {
-        font-size: 4vw;
-    }
-
-    .trending-topics {
-        font-size: 3vw;
-    }
-
 
     .trending-text {
         font-size: 2vw;
@@ -865,34 +1003,33 @@ html {
 
     .section-like {
         height: 8vw;
-        width: 100%;
+        width: 75vw;
     }
 
     .like-column {
         height: 8vw;
-        width: 6vw;
-        margin-right: 2vw;
+        width: 8vw;
+        justify-content: center;
     }
 
     .like {
         height: 6vw;
-        width: 6vw;
+        width: 8vw;
+        margin: 0;
         justify-content: center;
-
 
     }
 
     .comment-icon {
         width: 5vw;
         height: 5vw;
+        padding: 0;
+        margin: 0;
     }
 
     .like-icon {
+        margin: 0;
         width: 5vw;
         height: 5vw;
     }
-    .post{
-        width: 100vw;
-    }
-
 }
