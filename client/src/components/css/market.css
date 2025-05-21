@@ -349,7 +349,7 @@ html {
 /* MEDIA QUERIES */
 
 @media (orientation: portrait) {
-    .section-total-market {
+     .section-total-market {
         flex-direction: column;
         align-items: center;
     }
@@ -363,19 +363,17 @@ html {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         overflow-y: hidden;
+        order: 2;
     }
 
     .section-feed-market {
         width: 90vw;
+        order: 1;
     }
 
     .section-tops-market {
         width: 90vw;
-    }
-
-    .card-trending-market {
-        width: 77vw;
-        padding: 2vw;
+        order: 3;
     }
 
     .perfil-market {
@@ -440,114 +438,7 @@ html {
         border-radius: 2vw;
         height: 9vw;
     }
-     .card-trending-market {
-        width: 77vw;
-        height: 45vw;
-        padding: 2vw;
-        margin-bottom: 2rem;
-        border-radius: 3vw;
-    }
-    .trending-title-market {
-        font-size: 4vw;
-    }
 
-    .trending-topics-market {
-        font-size: 3vw;
-    }
-
-    .trending-text-market {
-        font-size: 2vw;
-    }
-
-}
-
-@media (max-width: 768px) {
-  .section-total-market {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .section-perfil-market {
-        flex-direction: row;
-        gap: 1rem;
-        width: 80vw;
-        height: auto;
-        overflow: auto;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        overflow-y: hidden;
-    }
-
-    .section-feed-market {
-        width: 90vw;
-    }
-
-    .section-tops-market {
-        width: 90vw;
-    }
-
-    .perfil-market {
-        width: 50vw;
-        height: 32vw;
-    }
-
-    .perfil-metade-market {
-        width: 50vw;
-        height: 14vw;
-    }
-
-    .perfil-metade-banner-market {
-        width: 50vw;
-        height: 18vw;
-    }
-
-    .perfil-section-foto-market {
-        margin-top: 12vw;
-        justify-content: center;
-    }
-
-    .foto-perfil-market {
-        margin: 1vw;
-        height: 8vw;
-        width: 8vw;
-        border-radius: 1vw;
-        z-index: 10;
-        margin-left: 4vw;
-    }
-
-    .perfil-coluna-market {
-        width: 40vw;
-        margin-left: 12vw;
-    }
-
-    .perfil-line1-market {
-        width: 50vw;
-        margin-top: 0;
-    }
-
-    .perfil-title-market {
-        margin-left: 2vw;
-        font-size: 3vw;
-    }
-
-    .perfil-text-market {
-        margin-left: 2vw;
-        font-size: 2vw;
-    }
-
-    .perfil-loc-market {
-        font-size: 1.4vw;
-    }
-
-    .banner-market {
-        width: 50vw;
-        height: 16vw;
-    }
-
-    .foto-market {
-        border-radius: 2vw;
-        height: 9vw;
-    }
     .card-trending-market {
         width: 77vw;
         height: 45vw;
@@ -555,6 +446,7 @@ html {
         margin-bottom: 2rem;
         border-radius: 3vw;
     }
+
     .trending-title-market {
         font-size: 4vw;
     }
@@ -566,8 +458,97 @@ html {
     .trending-text-market {
         font-size: 2vw;
     }
-}
 
+    .section-market {
+        width: 90vw;
+    }
+
+    .column-card-market,
+    .row-card-market {
+        width: 80vw;
+    }
+
+    .card-market {
+        width: 80vw;
+        height: 28vw;
+    }
+
+    .player-column {
+        width: 26vw;
+        height: 28vw;
+    }
+
+    .column-imagem-jogador {
+        width: 26vw;
+    }
+
+    .imagem-jogador {
+        width: 18vw;
+        height: 18vw;
+
+    }
+
+    .column-texto-jogador,
+    .row-info-texto-jogador {
+        width: 36vw;
+    }
+
+    .column-value-jogador {
+        width: 18vw;
+    }
+
+    .nome-jogador {
+        font-size: 2.5vw;
+    }
+
+    .function-jogador {
+        font-size: 2vw;
+    }
+
+    .margin-text {
+        margin-top: 4.5vw;
+    }
+
+    .transfer-row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2vw;
+        height: 16vw;
+        width: 26vw;
+    }
+
+    .transfer-time-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 9vw;
+        height: 12vw;
+    }
+
+    .transfer-seta-column {
+        width: 8vw;
+        height: 12vw;
+    }
+
+    .transfer-seta-column .row {
+        width: 8vw;
+    }
+
+    .transfer-time-column .row {
+        width: 9vw;
+    }
+    .imagem-time {
+        width: 8vw;
+        height: 8vw;
+    }
+    .bid-title{
+        font-size: 2vw;
+    }
+    .bid-value{
+        font-size: 2vw;
+    }
+
+}
 @media (max-width: 450px) {}
 
 @media (max-width: 410px) {}

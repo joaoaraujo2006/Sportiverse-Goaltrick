@@ -5,6 +5,7 @@ import Register from './Register';
 import Feed from './Feed';
 import Perfil from './Perfil';
 import Market from './Market';
+import Message from './message';
 
 class App extends Component {
     render() {
@@ -17,6 +18,7 @@ class App extends Component {
                         <Route path='/feed' element={<Feed/>}/>
                         <Route path='/perfil' element={<Perfil/>}/>
                         <Route path='/market' element={<Market/>}/>
+                        <Route path='/message' element={<Message/>}/>
                     </Routes>
                 </div>
             </div>

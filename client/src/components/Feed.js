@@ -239,7 +239,7 @@ const Feed = () => {
                                                 </div>
                                                 <div className='comment-like'>
                                                     <button
-                                                        onClick={toggleLikeComment} className='like'>
+                                                        onClick={toggleLikeComment} className='likeButtonComment'>
                                                         {likedComment ? <FaHeart color="red" className='like-iconButton' /> : <FaRegHeart size={32} color="white" className='like-iconButton' />}
                                                     </button>
                                                 </div>
@@ -347,19 +347,21 @@ const Feed = () => {
                                     <div className='like-column'>
                                         <button
                                             onClick={toggleLike} className='like'>
-                                            {liked ? <FaHeart color="red" className='like-icon' /> : <FaRegHeart size={32} color="white" className='like-icon' />}
+                                            {liked ? <FaHeart color="red" className='like-icon' /> : <FaRegHeart color="white" className='like-icon' />}
                                         </button>
                                     </div>
                                     <div className='like-column'>
                                         <button className='like' onClick={() => abrirImagem(post.image, post.foto, post.author, post.loc, post.content)}>
                                             <FaRegComment color='white' className='comment-icon' />
                                         </button>
-
                                     </div>
+                                    <div className='section-date'>
+                                        <div className='date-column'>
+                                            <small className='card-date'>{post.date}</small>
+                                        </div>
+                                    </div>
+                                    
 
-                                </div>
-                                <div className='section-data'>
-                                    <small className='card-date'>{post.date}</small>
                                 </div>
                             </motion.div>
                         ))}
