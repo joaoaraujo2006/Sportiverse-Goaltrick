@@ -77,7 +77,7 @@ const posts = [
         content: 'Como funciona o useEffect?',
         foto:'https://pm1.aminoapps.com/6757/b195be45a8386544d387dd8f235b5c93e8e8e02bv2_hq.jpg',
         date: '06/05/2025',
-        image: 'https://www.minecraft.net/content/dam/franchise/experiments/1075955/BentoHero_4x_Vanilla_1920x1080.jpg',
+        image: 'https://th.bing.com/th/id/OIP.F3o0929lAUfE5sy1SSQceQHaEK?rs=1&pid=ImgDetMain',
         perfil: '',
     }
 ]
@@ -211,6 +211,7 @@ const Feed = () => {
                                     </div>
                                     <div className='post-author'>
                                         <h3 className='post-title'>{authorModal}</h3>
+                                        <h3 className='post-title-comment'>Comments</h3>
                                         <p className='post-loc'>{locModal}</p>
                                     </div>
                                     <button className='button-post' onClick={fecharImagem}>X</button>
