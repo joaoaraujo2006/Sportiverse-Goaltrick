@@ -56,7 +56,7 @@
     background-color: black;
     margin-top: 2rem;
     border-radius: 1vw;
-    box-shadow: 2px 2px rgba(126, 126, 126, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.116);
 }
 
 .perfil-message:hover {
@@ -187,7 +187,7 @@
     height: 6vw;
     border-top-left-radius: 1vw;
     border-top-right-radius: 1vw;
-     background-color: #000000;
+    background-color: #000000;
 }
 
 .div-message-image {
@@ -211,7 +211,7 @@
     height: 6vw;
     width: 15vw;
     justify-content: center;
-   
+
 }
 
 .div-user-perfil .title {
@@ -273,11 +273,12 @@
     display: flex;
     flex-direction: column;
     max-height: 25vw;
+    height: 25vw;
     overflow-y: auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    
+
 }
 
 .scroll-area::-webkit-scrollbar {
@@ -320,21 +321,22 @@
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
-    
+    border: 1px solid rgba(255, 255, 255, 0.116);
+
 }
 
 .message-me .card-message {
     background-color: blue;
     color: white;
     margin-right: 0.5vw;
-    border-bottom-right-radius: 0.2vw ;
+    border-bottom-right-radius: 0.2vw;
 }
 
 .message-re .card-message {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     margin-left: 0.5vw;
-    border-bottom-left-radius: 0.2vw 
+    border-bottom-left-radius: 0.2vw
 }
 
 .card-message .text {
@@ -351,7 +353,7 @@
     border-radius: 0.8vw;
 }
 
-.section-input{
+.section-input {
     display: flex;
     flex-direction: row;
     height: 6vw;
@@ -361,13 +363,15 @@
     border-bottom-left-radius: 1vw;
     border-bottom-right-radius: 1vw;
 }
-.column-input{
+
+.column-input {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
 }
-.row-input{
+
+.row-input {
     display: flex;
     flex-direction: row;
     width: 40vw;
@@ -376,7 +380,8 @@
     border: 1px solid rgba(255, 255, 255, 0.126);
     background-color: black;
 }
-.div-input{
+
+.div-input {
     display: flex;
     flex-direction: column;
     width: 34vw;
@@ -384,6 +389,7 @@
     justify-content: center;
     margin-left: 1vw;
 }
+
 .input-message {
     width: 24vw;
     height: 3vw;
@@ -401,7 +407,7 @@
     cursor: pointer;
 }
 
-.message-column-button{
+.message-column-button {
     display: flex;
     flex-direction: column;
     height: 4vw;
@@ -409,19 +415,21 @@
     margin-right: 1vw;
     justify-content: center;
 }
-.message-column-button .button{
+
+.message-column-button .button {
     width: 2vw;
     height: 2vw;
 }
-.b-blue{
+
+.b-blue {
     background-color: blue;
     border-radius: 0.2vw;
-   padding: 0.2vw;
+    padding: 0.2vw;
 }
 
 /*Card Contract*/
 
-.card-contract{
+.card-contract {
     display: flex;
     flex-direction: column;
     width: 24vw;
@@ -432,19 +440,22 @@
     box-shadow: 2px 2px rgba(68, 67, 67, 0.138);
     border: 2px solid rgba(255, 255, 255, 0.125);
 }
-.contract-div{ 
+
+.contract-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.contract-title{
+
+.contract-title {
     font-size: 2vw;
     font-family: 'Inter';
     font-weight: bold;
     color: white;
     margin-top: 2vw;
 }
-.contract-text{
+
+.contract-text {
     font-size: 1vw;
     font-family: 'Inter';
     font-weight: 300;
@@ -453,7 +464,8 @@
     text-align: justify;
     margin: 0;
 }
-.contract-button{
+
+.contract-button {
     margin: 2vw;
     width: 16vw;
     height: 3vw;
@@ -466,26 +478,65 @@
     border: none;
     margin-bottom: 1vw;
 }
-.btn-blue{
+
+.btn-blue {
     background-color: blue;
     color: white;
 }
-.none-margin{
+
+.none-margin {
     margin-top: 0vw;
     margin-bottom: 2vw;
 }
 
-.contract-button:hover{
-     scale: 1.03;
+.contract-button:hover {
+    scale: 1.03;
     transition: 0.5s;
     cursor: pointer;
     background-color: rgb(11, 11, 70);
     color: white;
 }
-.btn-blue:hover{
-     scale: 1.03;
+
+.btn-blue:hover {
+    scale: 1.03;
     transition: 0.5s;
     cursor: pointer;
     background-color: rgb(41, 40, 40);
     color: rgb(255, 255, 255);
+}
+
+
+@media (orientation: portrait) {
+
+    .section-total-message{
+        flex-direction: column;
+    }
+    .section-perfil-message {
+        width: 95vw;
+    }
+
+    .column-message {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 95vw;
+        gap: 2vw;
+    }
+
+    .section-message {
+        display: flex;
+        flex-direction: column;
+        width: 95vw;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .section-contract-message {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 95vw;
+        align-items: center;
+    }
 }
